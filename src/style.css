@@ -44,14 +44,16 @@ form {
   border-radius: 50px;
   line-height: 20px;
   color: #272044;
+  margin: 5px;
 }
-#submit-button {
+#generate-submit-button {
   background: #34495e;
   padding: 14px 24px;
   border-radius: 50px;
   border: none;
   color: #fff;
   margin-left: 10px;
+  margin: 5px;
 }
 #submit-button:hover {
   background-color: #8dc6ff;
@@ -76,6 +78,28 @@ form {
   border-left: 3px solid #34495e;
   background-color: #fff;
 }
+.hidden {
+  display: none;
+}
+#quote strong {
+  color: #272044;
+  line-height: 1.5;
+  margin-right: 20px;
+}
+.blink {
+  animation: blink-animation 1s steps(5, start) infinite;
+}
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
 a {
   color: #272044;
   text-decoration: underline;

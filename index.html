@@ -9,6 +9,10 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+    <!-- typewriter plugin -->
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <!-- axios ajax js library -->
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
     <title>AI Quote Generator</title>
   </head>
   <body>
@@ -23,7 +27,7 @@
           <form action="" id="quote-generator">
             <input
               type="text"
-              placeholder="Enter your quote"
+              placeholder="Enter your quote text here..."
               autofocus
               autocomplete="off"
               class="user-instruction-input-field"
@@ -33,10 +37,12 @@
             <input
               type="submit"
               value="Generate New Quote"
-              id="submit-button"
+              id="generate-submit-button"
             />
           </form>
-          <div class="user-hint">i.e.inspirational, motivational or famous</div>
+          <div class="user-hint">
+            For example: success, failure, change, happiness, life
+          </div>
         </div>
         <div class="quote hidden" id="quote">
           <!--AI generated quote is going to be display here...-->
