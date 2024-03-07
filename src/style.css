@@ -29,7 +29,8 @@ header h1 {
   background-color: white;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  /* box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08); */
   margin-bottom: 30px;
 }
 form {
@@ -84,7 +85,6 @@ form {
 #quote strong {
   color: #272044;
   line-height: 1.5;
-  margin-right: 20px;
 }
 .blink {
   animation: blink-animation 1s steps(5, start) infinite;
